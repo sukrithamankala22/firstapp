@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prevop"
+    android:background="@drawable/bg1">
+
+    <TableRow android:background="#FEFFFF"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0B0B0B"
+            android:fontFamily="sans-serif-thin"
+            android:text="your previous applications"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FEFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold|italic" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B6B9BD"
+        android:padding="5dp" />
+
+    <!--    <TableRow-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#FAF9F6"-->
+    <!--        android:padding="5dp">-->
+
+    <!--        <TextView-->
+
+
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:fontFamily="sans-serif-smallcaps"-->
+    <!--            android:text="date"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#0A0B0B"-->
+    <!--            android:textSize="24sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:fontFamily="sans-serif-smallcaps"-->
+    <!--            android:text="reason"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#070707"-->
+    <!--            android:textSize="24sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:fontFamily="sans-serif-smallcaps"-->
+    <!--            android:text="approval"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textColor="#030404"-->
+    <!--            android:textSize="24sp"-->
+    <!--            android:textStyle="bold" />-->
+    <!--    </TableRow>-->
+
+    <!--    <TableRow-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#727477"-->
+    <!--        android:padding="5dp" />-->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Outpass History Will be Displayed Here "
+            android:textAlignment="inherit"
+            android:textColor="#FEFFFF"
+            android:textSize="25sp" />
+    </ScrollView>
+
+</TableLayout>

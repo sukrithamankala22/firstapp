@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Full Name"
+        android:inputType="textCapCharacters"
+        android:textColor="#F4EBEB"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Spinner
+        android:id="@+id/Branch2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:ems="10"
+        android:entries="@array/branch_array"
+        android:spinnerMode="dropdown"
+        android:textColorHighlight="#131212"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Branch2"
+        app:layout_constraintVertical_bias="0.041">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st year"
+            android:textColor="#F4EBEB"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd year"
+            android:textColor="#F4EBEB"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3rd year"
+            android:textColor="#F4EBEB"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4th year"
+            android:textColor="#F4EBEB"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#97968F"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Roll Number"
+        android:inputType="number"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/parentname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/password2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone2" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="300dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+
+        android:background="#F1F187"
+        android:text="Register"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+    <TextView
+        android:id="@+id/loginview"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Log in"
+        android:textColor="#B6AEAE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/parentname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Parent/guardian"
+        android:inputType="textPersonName"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/phone2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97968F"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Parents number"
+        android:inputType="phone"
+        android:textColor="#F6EEEE"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#fcfcf7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/password1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Password must have
+        * atleast 8 characters
+        * 1 uppercase letter
+        * 1 special character"
+        android:textColor="#d11336"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_register"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="97dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cbitlogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

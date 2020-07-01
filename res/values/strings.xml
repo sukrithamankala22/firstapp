@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">firstapp</string>
+
+    <string-array name="branch_array">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>Chemical</item>
+        <item>Biotech</item>
+    </string-array>
+</resources>

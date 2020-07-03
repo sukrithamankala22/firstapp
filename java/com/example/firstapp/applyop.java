@@ -121,7 +121,7 @@ public class applyop extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     public void apply() {
         int day= picker.getDayOfMonth();
-        int month= picker.getMonth();
+        int month= picker.getMonth()+1;
         int year= picker.getYear();
         odate= year+":"+month+":"+day;
         Log.e("TAG", odate);
